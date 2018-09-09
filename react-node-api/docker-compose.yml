@@ -1,0 +1,42 @@
+version: '3'
+services:
+    web-front-end:
+      image: docker-react-front-end
+      build: ./
+      command: npm start
+      ports:
+        - "80:3000"
+      volumes:
+        - ./src
+        - ./node_modules
+      depends_on:
+        - "couchdb"
+      environment:
+        - API_CONNECTION_IP=172.17.0.1
+    expressapi:
+      image: just-node-express-api
+      build: ./api
+      command: npm start
+      ports:
+        - "3001:3001"
+      volumes:
+        - ./api
+        - ./api/node_modules
+      depends_on:
+        - "couchdb"
+        - "web-front-end"
+      links:
+        - "couchdb"
+      environment:
+        - DATABASE_IP=172.17.0.1
+        - GMAIL_ACCOUNT_EMAIL=genesishexdevs@gmail.com
+        - GMAIL_ACCOUNT_PASSWORD=V3ryS!mpl3
+    couchdb:
+      container_name: couchdb
+      image: couchdb
+      ports:
+      - "5984:5984"
+      - "5986:5986"
+      environment:
+      - COUCHDB_USER=razaanis123
+      - COUCHDB_PASSWORD=abc123

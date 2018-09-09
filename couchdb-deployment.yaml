@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.1.0 (36652f6)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: couchdb
+  name: couchdb
+spec:
+  replicas: 3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: couchdb
+    spec:
+      containers:
+      - env:
+        - name: COUCHDB_PASSWORD
+          value: abc123
+        - name: COUCHDB_USER
+          value: razaanis123
+        image: razaanis/couchdb-database:2
+        name: couchdb
+        ports:
+        - containerPort: 5984
+        - containerPort: 5986
+        resources: {}
+      restartPolicy: Always
+status: {}

@@ -1,0 +1,515 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  overflow-x: hidden;
+}
+/* HOME LOGIN PAGE */
+
+.background-img {
+  background-image: url('./images/cityLoginBgBlack.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 121vh;
+}
+
+/* FORM STYLES */
+.form-row {
+  min-height: 121vh;
+  background-color: rgba(0, 0, 0,0.5);
+}
+.footer {
+  padding-bottom: 50px;
+  background-color: rgba(0, 0, 0,0.5);
+}
+.form {
+  background-color: #484848;
+  padding: 50px 25px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 2px 5px 124px 1px black;
+}
+
+.app-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.1em;
+  font-weight: bold;
+  background-image: url('images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  width: 350px;
+  height:170px;
+}
+.app-description {
+  font-family: 'FT Sans', sans-serif;
+  font-size: 1.1em;
+  color: #C5931A;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;
+}
+.smartphone{
+  width: 200px;
+  height: 500px;
+  background-image: url('images/smartphone.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1000;
+  top: 140px;
+}
+.smartphone .app-description{
+  position: absolute;
+  font-size: 1.2em;
+  top: -60px;
+}
+.smartphoneScreen{
+  width: 166px;
+  height: 369px;
+  background-image: url('images/appscreen1.PNG');
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 46px;
+  left: 16px;
+  z-index: 999;
+}
+.monitor{
+  width: 500px;
+  height: 500px;
+  background-image: url('images/laptop.png');
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 150px;
+}
+.monitorScreen{
+  width: 387px;
+  height: 300px;
+  background-image: url('images/monitorscreen.PNG');
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 17px;
+  left: 56px;
+}
+.footer2 {
+  padding-top: 120px;
+}
+.monitor .app-description{
+  position: absolute;
+  font-size: 1.2em;
+  top: -40px;
+  left: 140px;
+}
+.form label {
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+}
+.form small {
+  color: white;
+}
+.form input {
+  background-color: #000;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+.loginButton {
+  margin-top: 15px;
+  background-color: #111;
+  width: 180px;
+  color: white;
+  border-radius: 0px;
+  border-color: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+.loginButton:hover,.loginButton:active,.loginButton:focus {
+  background-color: #000;
+  border-color: #000;
+}
+.loginError {
+  background-color: #C49220;
+  padding: 10px 15px;
+  color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.loginError.active {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 0.5s ease-in 0.1s;
+}
+.cardLink {
+  color: #000;
+  font-size: 1.1em;
+  background-color: #FAD572;
+  padding: 10px 15px;
+  transition: all 0.5s 0s;
+  border-radius: 2px;
+
+}
+.cardLink:hover {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.cardLinkBox{
+  margin-top: 25px;
+}
+
+.dropzone {
+  width: 100%;
+  background-color: #000;
+  border-radius: 10px;
+  border: 1px dashed #fff;
+  min-height: 100px;
+  padding: 20px;
+  text-align: center;
+}
+.dropzoneActive {
+  background-color: #FAD572;
+  color: #000;
+  font-weight: bold;
+}
+/* ADMIN STYLES */
+
+.AdminApp{
+  background-image: url('images/zig-zag-wool.png');
+  background-repeat: repeat;
+  position: relative;
+}
+.aside-menu{
+  min-height: 100vh;
+  padding: 20px;
+  margin-right: 10px;
+  background-color: #f9d166;
+}
+
+.app-title-admin{
+  font-size: 1.8em;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+.admin-text{
+  font-size: 1.2em;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.seperator {
+  width: 40%;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 4px 4px 20px 1px black;
+}
+
+.nav-custom {
+  margin-top: 40px;
+  padding: 20px 0px;
+  background-color: #494949;
+  box-shadow: 2px 2px 20px 1px #111;
+}
+.nav-custom ul {
+  display: inline;
+  list-style-type: none;
+}
+.nav-custom ul li {
+  background-color: white;
+  padding: 20px 0px;
+  margin-bottom: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+.nav-custom ul li a {
+  color: black;
+  padding: 0 20px;
+}
+.nav-custom ul li a:hover {
+  text-decoration: none;
+}
+.nav-custom ul li:hover a{
+  color: #E6235D;
+  cursor: pointer;
+}
+.current-active-tab,.current-active-content {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9d166;
+}
+
+/* MEMBER ADD FORM */
+
+.memberaddbutton {
+  background-color: #DB0BA8;
+  border-color: #DB0BA8;
+}
+
+.memberBox form input {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.memberList ul {
+  list-style-type: none;
+}
+.memberList ul li {
+  margin-top: 10px;
+}
+.memberDetails {
+  background-color: #494949;
+  padding: 10px;
+  width: 80%;
+  border-radius: 8px;
+  color: white;
+}
+.memberDetails h4{
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+.memberDetails span{
+  font-family: 'PT Sans', sans-serif;
+}
+.memberDetails button{
+  margin-left: 10px;
+}
+.ghostMemberDetails {
+  opacity: 0.7;
+}
+/* ReactCSSTransitionGroup  */
+
+.loginform-appear {
+  transform: translateY(200px);
+  opacity: 0;
+}
+.loginform-appear.loginform-appear-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+
+/* MEMBER STYLES */
+.MemberApp {
+  background-image: url('./images/cityLoginBgBlack.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.mask {
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* OVERRIDING BOOTSTRAP STYLES */
+
+.bg-dark {
+  background: #000 !important;
+
+}
+
+.navbar-nav li {
+  margin-right: 85px;
+}
+
+.navbar-nav li a {
+  font-size: 1.1em;
+}
+
+
+/* MEMBER PROFILE  */
+
+.CustomHeightRow {
+  min-height: 70vh;
+}
+
+.profileHeading{
+  color: #ccc;
+}
+.profileForm {
+  background: #515151;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 115px 3px #000;
+  color: white;
+}
+
+.profileForm input,.profileForm textarea,.profileForm select {
+  background-color: #000;
+  border: none;
+}
+
+.profileButton {
+  margin-top: 15px;
+  background-color: #FAD673;
+  width: 180px;
+  color: black;
+  border-color: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+.profileButton:active {
+
+  background-color: black;
+  color: white;
+  border-color: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+.allperks {
+  padding: 0 50px;
+}
+.perkbox{
+  background-color: rgba(0,0,0,0.7);
+  padding: 60px 10px;
+  border-radius: 4px;
+  min-width: 396px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 65px 2px #000;
+}
+@media (max-width: 1670px)
+{
+   .perkbox { min-width: 0; }
+}
+@media (max-width: 571px)
+{
+   .perkbox { min-width: 397px; }
+}
+.perkheading {
+  color: white;
+  margin-top: 20px;
+  min-height: 76px;
+}
+.perkboxlink:hover{
+  text-decoration: none;
+}
+.getCardRow {
+  padding: 100px 0px;
+}
+.goldlink {
+  color: #FCE38E;
+}
+.contentdiv{
+  position: relative;
+}
+.envelope{
+  background-image: url('./images/perks/Envelope.png');
+  background-size: cover;
+  width: 100%;
+  min-height: 800px;
+  background-repeat: no-repeat;
+}
+.postit{
+  background-image: url('./images/perks/Postit.png');
+  background-size: contain;
+  width: 60%;
+  min-height: 800px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+.contentPara {
+  position: absolute;
+  width: 60%;
+  top: 15%;
+  font-size: 1.1em;
+  left: 20%;
+  z-index: 1000;
+}
+.contentPara_black {
+  position: absolute;
+  width: 50%;
+  top: 15%;
+  color: black;
+  font-size: 1.3em;
+  left: 25%;
+  z-index: 1000;
+}
+
+@media (max-width: 1366px)
+{
+  .contentPara_black {
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    color: black;
+    font-size: 1.0em;
+    left: 25%;
+    z-index: 1000;
+  }
+}
+@media (max-width: 1370px)
+{
+  .contentPara_black {
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    color: black;
+    font-size: 1.0em;
+    left: 25%;
+    z-index: 1000;
+  }
+}
+@media (min-width: 1370px)
+{
+  .contentPara_black {
+    position: absolute;
+    width: 50%;
+    top: 7%;
+    color: black;
+    font-size: 1.2em;
+    left: 25%;
+    z-index: 1000;
+  }
+}
+@media (min-width: 1600px)
+{
+  .contentPara_black {
+    position: absolute;
+    width: 50%;
+    top: 8%;
+    color: black;
+    font-size: 1.3em;
+    left: 25%;
+    z-index: 1000;
+  }
+}
+@media (max-width: 1280px)
+{
+  .contentPara_black {
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    color: black;
+    font-size: 1.1em;
+    left: 25%;
+    z-index: 1000;
+  }
+}
+@media (max-width: 1024px)
+{
+  .contentPara_black {
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    color: black;
+    font-size: .9em;
+    left: 25%;
+    z-index: 1000;
+  }
+}
+@media (max-width: 575px)
+{
+   .contentPara {
+     position: relative;
+    }
+    .contentPara_black{
+      position: relative;
+      color: white;
+      font-size: 1.0em;
+    }
+}

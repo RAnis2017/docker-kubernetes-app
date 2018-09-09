@@ -1,0 +1,33 @@
+{
+    "name": "reactapp",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "animated": "^0.2.2",
+        "axios": "^0.18.0",
+        "bootstrap": "^4.1.3",
+        "hover.css": "^2.3.2",
+        "immutability-helper": "^2.7.1",
+        "jquery": "^3.3.1",
+        "md5": "^2.2.1",
+        "popper.js": "^1.14.4",
+        "prop-types": "^15.6.2",
+        "react": "^16.4.2",
+        "react-addons-css-transition-group": "^15.6.2",
+        "react-animated-css": "^1.0.4",
+        "react-bootstrap": "^0.32.1",
+        "react-csv": "^1.0.14",
+        "react-dom": "^16.4.2",
+        "react-dropzone": "^5.0.1",
+        "react-motion": "^0.5.2",
+        "react-pose": "^2.2.0",
+        "react-router-dom": "^4.3.1",
+        "react-scripts": "1.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
+}
