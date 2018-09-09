@@ -27,6 +27,7 @@ Kubernetes
 ## Live Demo Running on Google Cloud Kubernetes is at 
 
 * [REACT-FRONTEND](http://35.231.135.101:3000/) - Live Demo
+* Which is running 3 Nodes each with 3 instances of CouchDB, React App, Node Express Api
 
 ## Authors
 
