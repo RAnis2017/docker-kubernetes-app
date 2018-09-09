@@ -19,8 +19,8 @@ services:
         - "couchdb"
       environment:
         - DATABASE_IP=172.17.0.1
-        - GMAIL_ACCOUNT_EMAIL=genesishexdevs@gmail.com
-        - GMAIL_ACCOUNT_PASSWORD=V3ryS!mpl3
+        - GMAIL_ACCOUNT_EMAIL=abc@gmail.com
+        - GMAIL_ACCOUNT_PASSWORD=abc
     couchdb:
       container_name: couchdb
       image: razaanis/couchdb-database:2

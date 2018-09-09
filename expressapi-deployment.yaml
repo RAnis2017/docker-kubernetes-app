@@ -22,9 +22,9 @@ spec:
         - name: DATABASE_IP
           value: 172.17.0.1
         - name: GMAIL_ACCOUNT_EMAIL
-          value: genesishexdevs@gmail.com
+          value: abc@gmail.com
         - name: GMAIL_ACCOUNT_PASSWORD
-          value: V3ryS!mpl3
+          value: abc
         image: razaanis/node-express-api:2
         name: expressapi
         ports:
