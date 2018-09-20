@@ -11,6 +11,7 @@ Sir Faisal (TOCI 3) by Muhammad Raza Anis B-14158046
 4. Change the Couchdb Username or Couchdb Password to change default inside docker-compose.yaml
 5. Change the API_IP and COUCHDB_DATABASE_IP according to your docker machine ip
 6. Front-end is on YOUR_IP:3000. Use "selectlagos" as username and "abc123" as password
+7. Changing API_URL in .env is important for it to work on your docker machine
 
 ### Prerequisites
 
