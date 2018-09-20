@@ -18,7 +18,7 @@ import { update } from "immutability-helper";
 class App extends Component {
   constructor(props, context) {
     super(props, context);
-    this.apiUrl = "http://35.190.135.64:3001/";
+    this.apiUrl = `http://${process.env.REACT_APP_API_URL}:3001/`;
     this.state = {
       appTitle: "Select Lagos",
       username: "",
